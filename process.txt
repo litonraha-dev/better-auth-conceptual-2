@@ -6,3 +6,15 @@
 6. create sign up page
 7. hero ui install
 8. import @import "@heroui/styles"; in global css
+10. design sign up page
+11. create /app/api/auth/[...all]/route.ts
+12. lib/auth-client configuration
+13. on submit sighup === const { data:signUpData, error } = await authClient.signUp.email({
+    name: data.name, 
+    email:data.email, 
+    password: data.password, 
+   
+    callbackURL: '/', 
+   });
+
+14.

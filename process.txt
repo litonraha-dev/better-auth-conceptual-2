@@ -17,4 +17,11 @@
     callbackURL: '/', 
    });
 
-14.
+14. on submit signin 
+15. session management 
+16. signout =await authClient.signOut({
+  fetchOptions: {
+    onSuccess: () => {
+      router.push("/login"); // redirect to login page
+    },
+  },

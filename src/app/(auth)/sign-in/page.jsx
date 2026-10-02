@@ -21,6 +21,11 @@ const SignInPage = () => {
 });
 console.log(data, 'data from signin page')
   };
+  const login = async () => {
+  const data = await authClient.signIn.social({
+    provider: "google",
+  });
+}
     return (
         <div>
             <Form
@@ -76,6 +81,7 @@ console.log(data, 'data from signin page')
         </Button>
       </div>
     </Form>
+    <Button className="mt-3" onClick={login}> Google Sign In</Button>
         </div>
     );
 };

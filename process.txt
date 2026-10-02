@@ -25,3 +25,14 @@
       router.push("/login"); // redirect to login page
     },
   },
+
+17.create proxy.js for private route
+18. go to goole console and create Oath id -> set BETTER_AUTH_GOOGLE_CLIENT_ID,
+BETTER_AUTH_GOOGLE_CLIENT_SECRET in .env
+19. add in auth.js  socialProviders: {
+        google: { 
+            clientId: process.env.BETTER_AUTH_GOOGLE_CLIENT_ID, 
+            clientSecret: process.env.BETTER_AUTH_GOOGLE_CLIENT_SECRET, 
+        }, 
+    },
+20. 

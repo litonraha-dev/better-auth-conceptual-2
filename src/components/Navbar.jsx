@@ -65,16 +65,20 @@ export default function Navbar() {
             <Link href="#">Features</Link>
           </li>
           <li>
-            <Link
+           {
+           session?.user &&  <Link
               href="/dashboard"
               className="font-medium text-accent"
               aria-current="page"
             >
               Dashboard
             </Link>
+           }
           </li>
           <li>
-            <Link href="/profile">Profile</Link>
+           {
+            session?.user &&  <Link href="/profile">Profile</Link>
+           }
           </li>
         </ul>
         <div className="hidden items-center gap-4 md:flex">

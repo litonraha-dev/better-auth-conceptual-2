@@ -35,4 +35,8 @@ BETTER_AUTH_GOOGLE_CLIENT_SECRET in .env
             clientSecret: process.env.BETTER_AUTH_GOOGLE_CLIENT_SECRET, 
         }, 
     },
-20. 
+20. email verification -> 
+  a. resend.com
+  b. create api key
+  c. add api key in .env
+

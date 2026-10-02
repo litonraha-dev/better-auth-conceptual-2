@@ -1,6 +1,7 @@
 "use client";
 import { authClient,signIn } from "@/app/lib/auth-client";
 import {Button, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
+import Link from "next/link";
 
 import React from 'react';
 
@@ -82,6 +83,7 @@ console.log(data, 'data from signin page')
       </div>
     </Form>
     <Button className="mt-3" onClick={login}> Google Sign In</Button>
+    <p><small>Forgot Password ?<Link href='/forgot-password' className="text-blue-500 underline">Click Here</Link></small></p>
         </div>
     );
 };
